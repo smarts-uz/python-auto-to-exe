@@ -16,3 +16,10 @@ def title(url):
 example = title('https://kun.uz/')
 input()
 
+print('kun.uz')
+print('kun.uz')
+print('kun.uz')
+print('kun.uz')
+print('kun.uz')
+print('kun.uz')
+print('kun.uz')
