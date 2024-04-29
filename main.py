@@ -1,25 +1,16 @@
-from bs4 import BeautifulSoup
-import requests
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def title(url):
-    url = requests.get(url).text
-    soup = BeautifulSoup(url, 'html.parser')
-    box = soup.find('div', class_='countries-list')
-    country_block = box.find('ul', class_='list')
-    countries = country_block.findAll('li')
-    for country in countries:
-        country_name = country.find('a').get_text(strip=True)
-        print(country_name)
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-example = title('https://kun.uz/')
-input()
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
 
-print('kun.uz')
-print('kun.uz')
-print('kun.uz')
-print('kun.uz')
-print('kun.uz')
-print('kun.uz')
-print('kun.uz')
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
